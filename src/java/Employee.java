@@ -7,19 +7,19 @@ public class Employee {
     public Employee(String name){
         this.name = name;
     }
-    public void empAge(int empAge ) {
-        age = empAge;
+    public void setAge(int age ) {
+        this.age = age;
     }
-    public void empDesignation(String empDesign) {
-        designation = empDesign;
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
-    public double getSalary(double salary) {
-        return this.salary;
+    public  void setSalary(double salary) {
+        this.salary = salary;
     }
     public void printEmployee(){
-        System.out.println("雇员的名字"+name);
-        System.out.println("雇员的年龄"+age);
-        System.out.println("雇员的职位"+designation);
-        System.out.println("雇员的工资"+salary);
+        System.out.println("雇员的名字:"+name);
+        System.out.println("雇员的年龄:"+age);
+        System.out.println("雇员的职位:"+designation);
+        System.out.println("雇员的工资:"+salary);
     }
 }
