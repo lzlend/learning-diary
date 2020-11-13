@@ -16,7 +16,7 @@ public class Employee {
         this.designation = designation;
     }
     //设置雇员的工资
-    public  void setSalary(double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
     //打印雇员的信息
