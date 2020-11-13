@@ -1,8 +1,9 @@
 public class EmployeeTest {
     public static void main (String[] args){
+        //创建Employee类的两个具体对象
         Employee employee = new Employee("张三");
         Employee employee1 = new Employee("李四");
-
+        //调用这两个对象的成员方法
         employee.setAge(28);
         employee.setDesignation("高级程序员");
         employee.setSalary(25000);
