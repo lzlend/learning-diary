@@ -16,25 +16,16 @@ public class SwitchTest {
         Scanner sc = new Scanner(System.in);
         int week = sc.nextInt();
         switch(week){
-            case 1:
+            case 1: case 2:case 4:case 5:
                 System.out.println("今天的计划是：读书");
                 break;
-            case 2:
-                System.out.println("今天的计划是：读书");
-                break;
-                //case穿透现象
             case 3:
                 System.out.println("今天的计划是：唱歌");
-                //break;
-            case 4:
-                System.out.println("今天的计划是：读书");
                 break;
-            case 5:
-                System.out.println("今天的计划是：读书");
-                break;
+            //case穿透现象
             case 6:
                 System.out.println("今天的计划是：爬山");
-                break;
+              //break;
             case 7:
                 System.out.println("今天的计划是：游泳");
                 break;
