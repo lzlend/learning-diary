@@ -1,3 +1,5 @@
+package employee;
+
 public class EmployeeTest {
     public static void main (String[] args){
         //创建Employee类的两个具体对象

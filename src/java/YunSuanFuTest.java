@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class YunSuanFuTest<result> {
     public static void main(String[] args) {
         int a = 10;
@@ -33,9 +35,10 @@ public class YunSuanFuTest<result> {
         System.out.println("(d < 4 || e > 1) = " + (d < 4 || e > 1) );
         System.out.println("! (d < 4 && e > 1) = " + ! (d < 4 && e > 1) );
         //短路逻辑运算符
-        boolean b1 = (d < 4) && (++d >= 10);
-        System.out.println("(d < 4 && (++d >= 10) = " + b1 );
-        System.out.println("(d < 4 && (++d >= 10) = " + d );
+        d = 11;
+        boolean b1 = (d < 11) && (d++ >= 10);
+        System.out.println("(d < 4 && (d++ >= 10) = " + b1 );
+        System.out.println("d = " + d );
         boolean b2 = (d < 4) || (++d >= 10);
         System.out.println("(d < 4 || (++d >= 10) = " + b2 );
         System.out.println("(d < 4 || (++d >= 10) = " + d );
@@ -43,10 +46,7 @@ public class YunSuanFuTest<result> {
         //三元运算符
         System.out.println( d < 10 ? (++d) : (--d) );
         System.out.println( d == 10 ? (++d) : (--d) );
-        //instanceof运算符
-        String name = "Jams";
-        boolean result = name instanceof String;
-        System.out.println( result ? (++d) : (--d) );
+
     }
 
 }
