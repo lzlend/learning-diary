@@ -1,3 +1,5 @@
+package switchcase;
+
 import java.util.*;
 public class SwitchTest {
     public static void main(String[] args) {

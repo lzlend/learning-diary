@@ -1,3 +1,5 @@
+package ifwhile;
+
 import java.util.*;
 public class IfTest {
 

@@ -1,3 +1,5 @@
+package forsum;
+
 public class SumTest {
     public static void main (String [] args){
         int sum = 0;

@@ -1,3 +1,5 @@
+package count;
+
 public class InstanceCounter {
 
     private static int numInstances = 0;

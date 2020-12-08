@@ -1,3 +1,5 @@
+package yunsuanfu;
+
 import java.util.Scanner;
 
 public class YunSuanFuTest<result> {
