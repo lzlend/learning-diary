@@ -13,9 +13,16 @@ public class Student {
 
     public void setName(String name) { this.name = name; }
     public String getName() { return this.name; }
-
+    //private修饰的变量、方法当且仅当只能在本类中调用
     //private static String study(String course) {
     //    return course;
     //}
+    static String study(String course) {
+        return course;
+    }
+
+    protected String coursetest(String courses) {
+        return courses;
+    }
 
 }
