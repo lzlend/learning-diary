@@ -2,9 +2,12 @@ package character;
 
 public class CharacterTest {
     public static void main(String[] args) {
+        //包装类Character为什么会出现警告？
         Character ch = 'A';
         Character chater = new Character('B');
         System.out.println(Character.isLetter(ch));
+        //为何是Character类名来调用？
+        System.out.println(chater.isLetter(ch));
         System.out.println(Character.isDigit(ch));
         System.out.println(Character.isWhitespace(ch));
         System.out.println(Character.isUpperCase(ch));
