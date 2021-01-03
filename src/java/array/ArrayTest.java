@@ -24,9 +24,9 @@ public class ArrayTest {
         }
         System.out.print(s.substring(0, s.length()-1));
         System.out.println();
-        //找出数组元素的最大值
+        // 如何找出数组元素的最大值？
         int[] arr1 = new int[] {2, 5, 6, 1, 3, 7, 9, 8, 0, 4};
-        // l表示数组中的最大值的下标
+        // l表示数组中的最大值的下标，遍历数组中的元素，找到最大值的下标就找到了最大值
         int l = 0;
         for (int j = 1; j < arr1.length; j++) {
             if(arr1[j] > arr1[l]) {
