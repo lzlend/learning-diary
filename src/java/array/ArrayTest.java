@@ -34,6 +34,16 @@ public class ArrayTest {
             }
         }
         System.out.println("此数组中的最大值为："+arr1[l]+"，是第"+(l + 1)+"个元素");
+        System.out.println("------------------------------");
+        System.out.println(Arrays.toString(reverse(arr)));
+    }
+    // 数组元素反置
+    public static int[] reverse(int[] array) {
+        int[] result = new int[array.length];
+        for (int q = 0, p = result.length - 1; q < array.length; q++, p--) {
+            result[p] = array[q];
+        }
+        return result;
     }
 
 }
