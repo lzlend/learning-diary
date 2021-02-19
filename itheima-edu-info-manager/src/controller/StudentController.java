@@ -9,10 +9,10 @@ import java.util.Scanner;
  * Created by Administrator on 2021-02-18.
  */
 public class StudentController {
-
+    //创建私有的StudentController类的对象studentService
     private StudentService studentService = new StudentService();
     private Scanner sc = new Scanner(System.in);
-
+    //开启学生管理系统方法
     public void start() {
 
         stuLoop:while(true) {
