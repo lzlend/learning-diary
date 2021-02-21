@@ -29,6 +29,7 @@ public class TeacherController {
                     break;
                 case "3":
                     System.out.println("修改老师信息");
+                    updateTeacher();
                     break;
                 case "4":
                     System.out.println("查看老师信息");
@@ -42,6 +43,7 @@ public class TeacherController {
             }
         }
     }
+
     //添加老师方法
     public void addTeacher() {
         String id;
@@ -60,7 +62,7 @@ public class TeacherController {
             }
         }
         //2.接收老师其他信息
-        System.out.println("请输入老师姓名：");
+        /*System.out.println("请输入老师姓名：");
         String name = sc.next();
         System.out.println("请输入老师年龄：");
         String age = sc.next();
@@ -71,45 +73,26 @@ public class TeacherController {
         Teacher teacher = new Teacher();
         //Exception in thread "main" java.lang.NullPointerException
         //报错：空指针异常，因为接收的老师信息没有封装到teacher对象中，所以teacher为空，导致Teacher[] teachers为空
-        /*teacher.setId(id);
+        *//*teacher.setId(id);
         teacher.setName(name);
         teacher.setAge(age);
-        teacher.setBirthday(birthday);*/
+        teacher.setBirthday(birthday);*//*
         teacher.setId(id);
         teacher.setName(name);
         teacher.setAge(age);
-        teacher.setBirthday(birthday);
+        teacher.setBirthday(birthday);*/
+        //2.接收老师其他信息并封装老师对象
+        Teacher teacher = inputTeacherInfo(id);
 
-        //4.将封装好的老师对象传递给TeacherService业务员中的addTeacher方法
+        //3.将封装好的老师对象传递给TeacherService业务员中的addTeacher方法
         boolean result = teacherService.addTeacher(teacher);
 
-        //5.根据返回结果给出提示添加成功或者失败
+        //4.根据返回结果给出提示添加成功或者失败
         if(result) {
             System.out.println("添加成功");
         }else {
             System.out.println("添加失败");
         }
-    }
-
-    //删除老师方法
-    private void deleteTeacherById() {
-        //1.接收要删除的老师id
-        String deleteId;
-        while(true) {
-            System.out.println("请输入要删除的老师id：");
-            deleteId = sc.next();
-            boolean exists = teacherService.isExists(deleteId);
-            if(!exists) {
-                System.out.println("您输入的老师id不存在，请重新输入：");
-            }else {
-                break;
-            }
-        }
-        //2.调用teacherService.deleteTeacherById()方法，根据id删除老师
-        teacherService.deleteTeacherById(deleteId);
-        //3.打印提示删除成功
-        System.out.println("删除成功");
-
     }
 
     //查看老师方法
@@ -132,5 +115,61 @@ public class TeacherController {
             }
         }
 
+    }
+
+    //删除老师方法
+    private void deleteTeacherById() {
+        //1.接收要删除的老师id
+        String deleteId = inputTeacherId();
+        //2.调用teacherService.deleteTeacherById()方法，根据id删除老师
+        teacherService.deleteTeacherById(deleteId);
+        //3.打印提示删除成功
+        System.out.println("删除成功");
+
+    }
+
+    //修改老师方法
+    public void updateTeacher() {
+        //1.接收要修改的老师id
+        String updateId = inputTeacherId();
+        //2.重新接收老师信息
+        Teacher newTeacher = inputTeacherInfo(updateId);
+        //4.调用TeacherService中的updateTeacher方法，并将updateId和newTeacher传入
+        teacherService.updateTeacher(updateId,newTeacher);
+        //5.给出提示修改成功
+        System.out.println("修改成功");
+    }
+
+    //录入老师id方法
+    public String inputTeacherId() {
+        String id;
+        while(true) {
+            System.out.println("请输入老师id：");
+            id = sc.next();
+            boolean exists = teacherService.isExists(id);
+            if(!exists) {
+                System.out.println("您输入的id不存在，请重新输入：");
+            }else {
+                break;
+            }
+        }
+        return id;
+    }
+
+    //录入老师信息并封装为老师对象方法
+    public Teacher inputTeacherInfo(String id) {
+        System.out.println("请输入老师姓名：");
+        String name = sc.next();
+        System.out.println("请输入老师年龄：");
+        String age = sc.next();
+        System.out.println("请输入老师生日：");
+        String birthday = sc.next();
+        //3.将老师信息封装为老师对象
+        Teacher newTeacher = new Teacher();
+        newTeacher.setId(id);
+        newTeacher.setName(name);
+        newTeacher.setAge(age);
+        newTeacher.setBirthday(birthday);
+        return newTeacher;
     }
 }
