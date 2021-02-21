@@ -1,6 +1,6 @@
-package protectedtest;
+package java.protectedtest;
 
-import privatetest.Student;
+import java.privatetest.Student;
 
 public class CollegeStudent extends Student {
     public static void main(String[] args) {

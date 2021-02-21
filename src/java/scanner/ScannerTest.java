@@ -1,4 +1,4 @@
-package scanner;
+package java.scanner;
 
 import java.util.*;
 

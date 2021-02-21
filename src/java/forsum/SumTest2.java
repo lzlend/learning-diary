@@ -1,4 +1,4 @@
-package forsum;
+package java.forsum;
 
 public class SumTest2 {
     public static void main(String[] args) {

@@ -1,8 +1,4 @@
-package string;
-
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
-
-import java.util.Arrays;
+package java.string;
 
 public class StringDemo {
     public static void main(String[] args) {

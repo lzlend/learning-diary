@@ -1,4 +1,4 @@
-package ifwhile;
+package java.ifwhile;
 
 public class WhileTest{
 

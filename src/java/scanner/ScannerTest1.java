@@ -1,4 +1,4 @@
-package scanner;
+package java.scanner;
 
 public class ScannerTest1 {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package yunsuanfu;
-
-import java.util.Scanner;
+package java.yunsuanfu;
 
 public class YunSuanFuTest<result> {
     public static void main(String[] args) {

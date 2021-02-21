@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/learning-diary.iml" filepath="$PROJECT_DIR$/.idea/learning-diary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/develop.iml" filepath="$PROJECT_DIR$/develop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima-edu-info-manager/itheima-edu-info-manager.iml" filepath="$PROJECT_DIR$/itheima-edu-info-manager/itheima-edu-info-manager.iml" />
     </modules>
   </component>
 </project>

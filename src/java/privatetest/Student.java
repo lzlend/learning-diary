@@ -1,4 +1,4 @@
-package privatetest;
+package java.privatetest;
 
 public class Student {
     private int num;

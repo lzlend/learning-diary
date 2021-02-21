@@ -12,6 +12,7 @@ public class StudentController {
     //创建私有的StudentController类的对象studentService
     private StudentService studentService = new StudentService();
     private Scanner sc = new Scanner(System.in);
+
     //开启学生管理系统方法
     public void start() {
 
@@ -45,6 +46,7 @@ public class StudentController {
 
         }
     }
+
     //添加学生方法
     public void addStudent() {
         //StudentService studentService = new StudentService();
@@ -74,6 +76,7 @@ public class StudentController {
             System.out.println("添加失败");
         }
     }
+
     //查看学生方法
     public void findAllStudent() {
         //1.调用StudentController业务员中的获取方法，得到其中的学生对象
@@ -93,6 +96,7 @@ public class StudentController {
             }
         }
     }
+
     //删除学生方法
     public void deleteStudentById() {
         //1.接收要删除的学生id
@@ -102,6 +106,7 @@ public class StudentController {
         //3.提示删除成功
         System.out.println("删除成功！");
     }
+
     //修改学生方法
     public void updateStudent() {
         //1.接收要删除的学生id
@@ -114,6 +119,7 @@ public class StudentController {
         //4.提示修改成功
         System.out.println("修改成功！");
     }
+
     //键盘录入学生id方法
     public String inputStudentId() {
         //1.键盘接收学生id
@@ -133,6 +139,7 @@ public class StudentController {
         }
         return id;
     }
+
     //键盘录入学生信息方法
     public Student inputStudentInfo(String id) {
         //1.重新输入学生信息并封装为一个新的学生对象

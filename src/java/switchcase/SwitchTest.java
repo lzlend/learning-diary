@@ -1,4 +1,4 @@
-package switchcase;
+package java.switchcase;
 
 import java.util.*;
 public class SwitchTest {

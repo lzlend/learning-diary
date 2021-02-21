@@ -1,4 +1,4 @@
-package count;
+package java.count;
 
 public class InstanceCounter {
 

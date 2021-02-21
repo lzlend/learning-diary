@@ -1,4 +1,4 @@
-package character;
+package java.character;
 
 public class CharacterTest {
     public static void main(String[] args) {

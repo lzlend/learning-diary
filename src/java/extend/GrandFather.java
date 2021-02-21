@@ -1,4 +1,4 @@
-package extend;
+package java.extend;
 
 public class GrandFather {
 }

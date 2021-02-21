@@ -1,6 +1,4 @@
-package privatetest;
-
-import privatetest.Student;
+package java.privatetest;
 
 public class CollegeStudents extends Student {
     public static void main(String[] args) {

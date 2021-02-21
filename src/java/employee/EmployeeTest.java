@@ -1,4 +1,4 @@
-package employee;
+package java.employee;
 
 public class EmployeeTest {
     public static void main (String[] args){
